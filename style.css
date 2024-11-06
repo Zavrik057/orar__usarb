@@ -1,3 +1,25 @@
 
 @import url('./null-style/style.css');
 
+:root{
+   --mcol1: whitesomke;
+   --mcol2: rgb(50, 135, 64);
+   --mcol3: rgb(217, 93, 114);
+   --mcol4: rgb(113, 53, 113);
+   --mcol5: #;
+   --mcol5: #;
+    
+   --coeficient-width: 1;
+   --font-title: calc(26px * var(--coeficient-width));
+   --font-text: calc(16px * var(--coeficient-width));
+   --font-mini-title: calc(20px * var(--coeficient-width));
+   --font-big-title: calc(65px * var(--coeficient-width));
+    
+   --text-col: ;
+   --title-col: black;
+    
+   --breakpoint-1: 1300px; /* desctop */
+   --breakepoint-2: 1024px; /* laptop */
+   --breakpoint-3: 768px; /* tablet */
+   --breakepoint-4: 480px; /* phone */
+}
