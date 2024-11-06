@@ -2,7 +2,7 @@
 
 :root {
    --mcol1: whitesmoke;
-   --mcol2: rgb(50, 135, 64);
+   --mcol2: rgb(59, 140, 85);
    --mcol3: rgb(217, 93, 114);
    --mcol4: rgb(113, 53, 113);
    --mcol5: #;
@@ -42,9 +42,16 @@
    min-height: 100vh;
    top: 0;
    left: 0;
-   background-color: cadetblue;
+   background: url('./pictures/background.jpeg') no-repeat;
+   background-size: cover;
 }
-
+.wrapper__blur{
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   background-color: rgba(61, 61, 61, 0.606);
+}
 .main {
    width: 70%;
    margin: 0 auto;
@@ -54,7 +61,7 @@
 .content {
    display: grid;
    grid-template-columns: repeat(2, 1fr);
-   gap: 30px;
+   gap: 50px;
 }
 
 .content__left {
@@ -71,9 +78,10 @@
    width: 100%;
    padding: 30px;
    background-color: var(--mcol1);
+   color: var(--text-col);
 }
-
-.content__title {
+.content__section .title{
+   text-transform: capitalize;
    color: var(--text-col);
 }
 
@@ -92,8 +100,9 @@
    display: flex;
    align-items: center;
    justify-content: center;
-   padding: 10px 20px;
+   padding: 12px 23px;
    color: var(--title-col);
+   font-size: 24px;
    text-transform: capitalize;
    background-color: var(--mcol1);
 }
@@ -369,30 +378,72 @@ input {
    border: 1px solid var(--mcol4);
 }
 
-.bxs-objects-horizontal-left {}
+.content__about {
+   width: 100%;
+   font-size: var(--font-text);
+   padding: 20px;
+   text-transform: capitalize;
+   color: var(--mcol2);
+   background-color: var(--mcol1);
+}
 
-.content__about {}
+.content__right {
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+}
+.content__image {
+   width: 200px;
+   height: auto;
+   margin: 0 auto;
+}
+.content__title{
+   color: var(--mcol1);
+   text-transform: uppercase;
+   text-align: center;
+   font-weight: bold;
+}
 
-.content__right {}
+.shedule__display {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   gap: 1px;
+}
 
-.content__image {}
+.shedule__item {
+   display: grid;
+   grid-template-columns: 1fr 75%;
+   gap: 1px;
+}
 
-.content__shedule {}
+.shedule__hour {
+   padding: 5px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: var(--font-text);
+   color: var(--mcol1);
+   line-height: 145%;
+   background-color: var(--mcol2);
+}
 
-.shedule {}
+.shedule__main {
+   padding: 20px;
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+   align-items: center;
+   justify-content: center;
+   background-color: var(--mcol1);
+   font-size: var(--font-text);
+   color: var(--text-col);
+   text-transform: capitalize;
+}
 
-.shedule__display {}
-
-.shedule__item {}
-
-.shedule__hour {}
-
-.shedule__main {}
-
-.shedule__lesson {}
-
-.shedule__type {}
-
-.shedule__teacher {}
-
-.shedule__place {}
+.shedule__lesson {
+   font-weight: bold;
+}
+.shedule__place {
+   font-weight: bold;
+}
